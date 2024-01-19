@@ -23,14 +23,6 @@ const Footer = () => {
       <SFooterContainerRight>
         <SocialIcons />
       </SFooterContainerRight>
-      {/* <SList>
-        <Link to={`/category/news`}>News</Link>
-        <Link to={`/category/world`}>World</Link>
-        <Link to={`/category/economy`}>Economy</Link>
-        <Link to={`/category/sport`}>Sport</Link>
-        <Link to={`/category/culture`}>Culture</Link>
-        <Link to={`/category/technology`}>Technology</Link>
-      </SList> */}
     </SFooter>
   )
 }

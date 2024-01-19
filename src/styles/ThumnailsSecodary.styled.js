@@ -150,6 +150,7 @@ export const SThumbTextSec = styled.div`
     display: flex;
     align-items: center;
     position: relative;
+    padding: 0.25rem;
 
     @media(min-width: ${({theme}) => theme.size.tablet}) {
         align-items: flex-start;
@@ -163,7 +164,7 @@ export const SThumbTextSec = styled.div`
         position: absolute;
         bottom: 0.25rem;
         right: 0.25rem;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 `
 export const SThumbTextSide = styled.div`
@@ -172,11 +173,12 @@ export const SThumbTextSide = styled.div`
     display: flex;
     align-items: center;
     position: relative;
+    padding: 0 0.25rem;
     span {
         position: absolute;
         bottom: 0.25rem;
         right: 0.25rem;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
     

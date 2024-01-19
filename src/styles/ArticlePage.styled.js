@@ -11,7 +11,6 @@ export const SArticlePage = styled.div`
     box-shadow: ${({theme}) => theme.shadow};
 `
 export const SArticleTitle = styled.h1`
-    //background-color: green;
     grid-column: span 10;
     margin: 1rem;
     padding: 1rem;

@@ -16,7 +16,7 @@ export const STitle = styled.h3`//CHANGE možda obrisati sve
     }
 `
 
-export const STitleS = styled.h4`
+export const STitleS = styled.h5`
     text-align: center;
     margin: 0 auto;
     color: ${({theme}) => theme.colors.secondary};

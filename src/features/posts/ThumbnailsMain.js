@@ -59,15 +59,13 @@ const ThumbnailsMain = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       position < 17 ? scrollRight() : setPosition(0)
-      // console.log("moved")
-    }, 6000)
+    }, 5000)
     return () => clearInterval(interval)
   }, [position])
 
   const container = useRef(null)
   useEffect(() => {
     setDistance(container.current.container.current.scrollWidth / 20)
-    // console.log(distance)
   }, [windowWidth, windowHeight])
 
   const eventDragEnd = (e, data) => {
@@ -79,9 +77,6 @@ const ThumbnailsMain = () => {
   useEffect(() => {
     moveMenu()
   }, [position, distance])
-
-  // const scrollRight = () => (position > -85 ? setPosition(position - 5) : null)
-  // const scrollLeft = () => (position < 0 ? setPosition(position + 5) : null)
 
   const scrollRight = () => {
     setPosition(Math.min(17, position + 1))
@@ -155,25 +150,3 @@ const ThumbnailsMain = () => {
 }
 
 export default ThumbnailsMain
-
-{
-  /* <SOuterContainer>
-        <SScrollButton onClick={scrollLeft}>
-          <FaArrowAltCircleLeft />
-        </SScrollButton>
-        <SInnerContainer>
-          <SThumbRowScroll
-            position={`${position}%`}
-            draggable
-            onDragStart={eventDragStart}
-            onDragEnd={eventDragEnd}
-            ref={myRef}
-          >
-            <SThumbRowWrapper>{ThumbnailMain}</SThumbRowWrapper>
-          </SThumbRowScroll>
-        </SInnerContainer>
-        <SScrollButton onClick={scrollRight}>
-          <FaArrowAltCircleRight />
-        </SScrollButton>
-      </SOuterContainer> */
-}

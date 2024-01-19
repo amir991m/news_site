@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 //import { NewsIcon, WorldIcon, EconomyIcon, SportIcon, CultureIcon, TechnologyIcon } from "./styles/Icons.styled";
 import {
   FaNewspaper,
@@ -7,27 +7,27 @@ import {
   FaVolleyballBall,
   FaTheaterMasks,
   FaMicrochip,
-} from "react-icons/fa";
+} from "react-icons/fa"
 //import { SCategoryHeader } from "./styles/Category.styled";
 
 const IconSwitch = ({ target }) => {
   switch (target) {
     case "news":
-      return <FaNewspaper />;
+      return <FaNewspaper />
     case "world":
-      return <FaGlobeAmericas />;
+      return <FaGlobeAmericas />
     case "economy":
-      return <FaChartLine />;
+      return <FaChartLine />
     case "sport":
-      return <FaVolleyballBall />;
+      return <FaVolleyballBall />
     case "culture":
-      return <FaTheaterMasks />;
+      return <FaTheaterMasks />
     case "technology":
-      return <FaMicrochip />;
-      return null;
+      return <FaMicrochip />
+      return null
   }
-};
+}
 
-export default IconSwitch;
+export default IconSwitch
 
 //<SCategoryHeader><Link to={`/category/${category}`}>{IconSwitch}{` ${category}`}</Link></SCategoryHeader>

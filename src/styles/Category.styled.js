@@ -45,8 +45,6 @@ export const SCategoryThumb = styled.article`
     
 `
 
-
-
 export const SCategoryThumbImage = styled.img`
     width: 30%;
     height: 100%;

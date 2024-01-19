@@ -46,7 +46,6 @@ const ArticlePage = () => {
             alt={post.title}
           />
           <SArticleText>{post.text}</SArticleText>
-          <p>{id}</p>
         </SArticleContainerMain>
         <SArticleContainerRight>
           <CategoryHeader category={post.category} />
