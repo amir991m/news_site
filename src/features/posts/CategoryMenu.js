@@ -7,10 +7,10 @@ import {
   SCategoryText,
 } from "../../styles/Category.styled"
 import { Link, useParams } from "react-router-dom"
-import { STitle } from "../../styles/Title.styled"
+import { STitleS, STitle } from "../../styles/Title.styled"
 import TimeAgo from "../../components/TimeAgo"
 
-const CategoryMenu = ({ target, number }) => {
+const CategoryMenu = ({ target, number, sideMenu }) => {
   const {
     data: posts,
     isLoading,
@@ -31,7 +31,11 @@ const CategoryMenu = ({ target, number }) => {
             alt={e.title}
           />
           <SCategoryThumbBody>
-            <STitle>{e.title}</STitle>
+            {sideMenu ? (
+              <STitleS>{e.title}</STitleS>
+            ) : (
+              <STitle>{e.title}</STitle>
+            )}
             <SCategoryText>{`${e.text.substring(0, 450)}...`}</SCategoryText>
             <span>
               <TimeAgo timestamp={e.date} />

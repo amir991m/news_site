@@ -49,7 +49,7 @@ const ArticlePage = () => {
         </SArticleContainerMain>
         <SArticleContainerRight>
           <CategoryHeader category={post.category} />
-          <CategoryMenu target={post.category} number={6} />
+          <CategoryMenu target={post.category} number={6} sideMenu={true} />
         </SArticleContainerRight>
       </SArticlePage>
     )

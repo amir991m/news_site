@@ -12,7 +12,7 @@ const CategoryPage = () => {
     <SPage>
       <SCategoryContainer>
         <CategoryHeader category={id} />
-        <CategoryMenu target={id} number={10} />
+        <CategoryMenu target={id} number={10} sideMenu={false} />
       </SCategoryContainer>
     </SPage>
   )
